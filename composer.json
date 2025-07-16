@@ -26,5 +26,15 @@
             "JildertMiedema\\LaravelPlupload": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JildertMiedema\\LaravelPlupload\\LaravelPluploadServiceProvider"
+            ],
+            "aliases": {
+                "Plupload": "JildertMiedema\\LaravelPlupload\\Facade"
+            }
+        }
+    }
 }
